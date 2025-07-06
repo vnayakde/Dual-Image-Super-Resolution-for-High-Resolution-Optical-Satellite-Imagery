@@ -1,13 +1,7 @@
-
-
-
 # 🛰️ Dual-Image Super-Resolution using EDSR (with Concatenation Fusion)
 
 [![Python](https://img.shields.io/badge/Python-3.8%2B-blue?logo=python)](https://www.python.org/)
 [![PyTorch](https://img.shields.io/badge/PyTorch-1.12%2B-red?logo=pytorch)](https://pytorch.org/)
-[![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
-[![Stars](https://img.shields.io/github/stars/your-username/dual-image-sr-edsr?style=social)](https://github.com/your-username/dual-image-sr-edsr)
-
 A deep learning-based Dual-Image Super-Resolution framework built using a modified **EDSR (Enhanced Deep Super-Resolution)** architecture. The model takes **two temporally shifted low-resolution satellite images** and fuses them to generate a high-resolution output. Fusion is achieved via **simple channel-wise concatenation** followed by deep residual refinement.
 
 ---
@@ -20,7 +14,36 @@ This approach is especially useful for missions like **Proba-V**, where the trad
 
 ---
 
+## 📝 Articles & Documentation
+
+I’ve written a series of Medium blogs that explain this project step-by-step — from dataset preparation to building the model, training it, and visualizing results.
+
+You can read the full journey here:
+
+* 📄 [Part 1: Dataset Creation & Preprocessing](https://medium.com/@Phineouse/dual-image-super-resolution-for-high-resolution-optical-satellite-imagery-data-preprocessing-605fe123152e)
+  *Covers how the Proba-V satellite dataset was normalized, filtered, and restructured for dual-image SR training.*
+
+* 🧠 [Part 2: Building the Model Architecture (EDSR + Fusion)](https://medium.com/@Phineouse/dual-image-super-resolution-for-high-resolution-optical-satellite-imagery-data-preprocessing-605fe123152e)
+  *Explains the PyTorch model architecture including the use of EDSR blocks, concatenation fusion, and PixelShuffle.*
+
+* 📊 [Part 3: Training, Evaluation (PSNR), and Inference](https://medium.com/@Phineouse/dual-image-super-resolution-for-high-resolution-optical-satellite-imagery-data-loader-class-and-f256e2679114)
+  *Discusses training strategy, metrics, loss functions, and how to visualize and interpret the results.*
+  
+  📖 All concepts are explained clearly with examples, visuals, and reasoning, so don’t worry if you’re new to this!
+
+> These articles are written in a beginner-friendly tone with technical clarity, so even if you’re just getting started with deep learning or super-resolution, you’ll find them easy to follow.
+
+> If you find the articles helpful, feel free to give them a follow or clap on Medium — it helps spread the word and supports open-source learning!
+
+
+---
+
+Let me know if you'd like to add image previews or article badges!
+
+
 ## 🗂️ Dataset
+* [Main dataset PROBAV](https://drive.google.com/file/d/1BAGjd5ScCXNF2Y6ffBUopUnctqVhLq8J/view)
+* [Preprocessed and final dualsr dataset ](https://kelvins.esa.int/proba-v-super-resolution/data/)
 
 This project uses a preprocessed version of the **Proba-V Super-Resolution Dataset**. The structure is as follows:
 
@@ -100,7 +123,8 @@ Example: Dual inputs, model output, and ground truth comparison.
 
 Here’s an example of how the model enhances resolution:
 
-![SR Output Sample](https://github.com/user-attachments//home/vnayakde/Downloads/sr_visualization/04a92e37-d06b-4116-949d-c29239e93060.jpeg)
+![Sample Output](https://github.com/vnayakde/Dual-Image-Super-Resolution-for-High-Resolution-Optical-Satellite-Imagery/blob/main/e03bab5c-a2ba-47a4-bf61-3b6a421a929b.jpeg)
+
 
 > Sample outputs and intermediate visualizations are stored in the `sr_visualization/` directory.
 
