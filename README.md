@@ -25,7 +25,7 @@ You can read the full journey here:
 * 📄 [Part 1: Dataset Creation & Preprocessing](https://medium.com/@Phineouse/dual-image-super-resolution-for-high-resolution-optical-satellite-imagery-data-preprocessing-605fe123152e)
   *Covers how the Proba-V satellite dataset was normalized, filtered, and restructured for dual-image SR training.*
 
-* 🧠 [Part 2: Building the Model Architecture (EDSR + Fusion)](https://medium.com/@Phineouse/dual-image-super-resolution-for-high-resolution-optical-satellite-imagery-data-preprocessing-605fe123152e)
+* 🧠 [Part 2: Building the Model Architecture (EDSR + Fusion)](https://medium.com/@Phineouse/dual-image-super-resolution-for-high-resolution-optical-satellite-imagery-model-building-3aa1a58993d1)
   *Explains the PyTorch model architecture including the use of EDSR blocks, concatenation fusion, and PixelShuffle.*
 
 * 📊 [Part 3: Training, Evaluation (PSNR), and Inference](https://medium.com/@Phineouse/dual-image-super-resolution-for-high-resolution-optical-satellite-imagery-data-loader-class-and-f256e2679114)
