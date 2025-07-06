@@ -1,7 +1,9 @@
-# 🛰️ Dual-Image Super-Resolution using EDSR (with Concatenation Fusion)
+# Dual-Image Super-Resolution using EDSR (with Concatenation Fusion)
 
 [![Python](https://img.shields.io/badge/Python-3.8%2B-blue?logo=python)](https://www.python.org/)
 [![PyTorch](https://img.shields.io/badge/PyTorch-1.12%2B-red?logo=pytorch)](https://pytorch.org/)
+
+
 A deep learning-based Dual-Image Super-Resolution framework built using a modified **EDSR (Enhanced Deep Super-Resolution)** architecture. The model takes **two temporally shifted low-resolution satellite images** and fuses them to generate a high-resolution output. Fusion is achieved via **simple channel-wise concatenation** followed by deep residual refinement.
 
 ---
